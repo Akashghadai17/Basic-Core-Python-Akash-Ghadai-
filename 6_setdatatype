@@ -1,51 +1,97 @@
-#creating set
-s1={1,'Akash',7005}#SET ALLOW diffrent type of data
-print(s1)
-#check type
-print(type(s1))
-s2={20,30,40,50}
-print(s2)
-#set function
-#set()(Which set object can be constructed out of any sequence like string,list,tupple object. )
-s3=set("Hello my name is akash ghadai")
-print(s3)
-#list to set
-s4=set([10,20,30,40,50,60,70])
-print(s4)
-#tupple to set
-s5=set((10,20,30,40,50,60,70))
-print(s5)
-#set modify 
-# 1)add()Add items in set
-s7={"java","c","c++"}
-s7.add("python")
-print(s7) 
-# 2)update()update set item
-s7.update(["Basic"])
-print(s7)
-# 3)clear()Its clear all set items
-s1.clear()
-print(s1)
-# 4)copy()copy one set and peast in another set
-s1=s2.copy()
-print(s1)
-# 5)discard()Delet item fron set
-s1.discard(20)
-print(s1)
-# 5)remove()
-s1.remove(30)
-print(s1)
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+# -------------------------------
 # SET OPERATIONS
-# 1)union (|)
-print(s1|s2)
-print(s1.union(s2))
-#2)Intersection
-print(s1&s2)
-print(s1.intersection(s2))
-#3)Diffrence
-print(s1.difference(s2))
-a1={20,30,40}
-a2={30,40,50}
-#4 )Symmetric Diffrence
-print(s1^s2)
-print(s1.symmetric_difference(s2))
+# -------------------------------
+
+# Add element
+A.add(10)
+print(A)                       # {1, 2, 3, 4, 10}
+
+# Remove element
+A.remove(10)
+print(A)                       # {1, 2, 3, 4}
+
+# Discard element (no error if not present)
+A.discard(100)
+
+# Membership
+print(3 in A)                  # True
+
+# Iteration
+for i in A:
+    print(i)
+
+# Union
+print(A | B)                   # {1, 2, 3, 4, 5, 6}
+
+# Intersection
+print(A & B)                   # {3, 4}
+
+# Difference
+print(A - B)                   # {1, 2}
+
+# Symmetric Difference
+print(A ^ B)                   # {1, 2, 5, 6}
+
+
+# -------------------------------
+# SET BUILT-IN FUNCTIONS
+# -------------------------------
+
+# len() – Number of elements
+print(len(A))                  # 4
+
+# type() – Data type
+print(type(A))                 # <class 'set'>
+
+# max() – Maximum element
+print(max(A))                  # 4
+
+# min() – Minimum element
+print(min(A))                  # 1
+
+# sum() – Sum of elements
+print(sum(A))                  # 10
+
+# sorted() – Sorted list
+print(sorted(A))               # [1, 2, 3, 4]
+
+# set() – Create empty set
+C = set()
+
+
+# -------------------------------
+# SET METHODS
+# -------------------------------
+
+# add() – Add element
+A.add(7)
+
+# update() – Add multiple elements
+A.update([8, 9])
+
+# remove() – Remove element (error if not present)
+A.remove(7)
+
+# discard() – Remove element safely
+A.discard(100)
+
+# pop() – Remove random element
+A.pop()
+
+# clear() – Remove all elements
+A.clear()
+
+# copy() – Copy set
+D = B.copy()
+
+
+# -------------------------------
+# SET COMPARISON METHODS
+# -------------------------------
+
+print(A.issubset(B))            # True / False
+print(B.issuperset(A))          # True / False
+print(A.isdisjoint(B))          # True / False

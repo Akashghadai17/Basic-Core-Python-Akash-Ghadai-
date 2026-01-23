@@ -23,17 +23,24 @@ print(3 in A)                  # True
 for i in A:
     print(i)
 
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
 # Union
 print(A | B)                   # {1, 2, 3, 4, 5, 6}
+print(A.union(B))
 
 # Intersection
 print(A & B)                   # {3, 4}
+print(A.intersection(B))
 
 # Difference
 print(A - B)                   # {1, 2}
+print(A.difference(B))
 
 # Symmetric Difference
 print(A ^ B)                   # {1, 2, 5, 6}
+print(A.symmetric_difference(B))
 
 
 # -------------------------------

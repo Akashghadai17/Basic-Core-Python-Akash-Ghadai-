@@ -44,35 +44,126 @@ print(x)
 name1=a.split()
 print(name1)
 
+Built in function
+-----------------
+s = "Hello World"
+
+len(s)
+type(s)
+str(s)
+max(s)
+min(s)
+sorted(s)
+
 #String METHODS
-#1)CAPITALIZE(This method convert the first charector of string to upper letter)
-name="akash"
-print(name.capitalize())
-#2)UPPER(It convert String all charector to capital case)
-print(name.upper())
-#3)lower(it covert string all charector to lower case)
-print(name.lower())
-#4)title(It convert string with the first charector of each word converted to uppercase)
-song="teri ye addah janiye tujhe ta pata"
-print(song.title())
-#5)find(This method find the first occurrence of a substring in another string id not found then the method return -1 )
-print(song.find('tujhe'))
-#6)index(This method similar to finf() but throws a valuerror if the substring is not found. )
-print(song.index('addah'))
-#7)count(This method returns the number of occurences of a substring in givenstring )
-print(song.count('ye'))
-#8)isalpha(This method returns true if all the charectors in a strng are allphabetic (a-z or A-Z), other returns false. )
-print(song.isalpha())
-#9)isdigit(This method returns true if all the charectors in a strng are digit or not! )
-print(song.isdigit())
-#10)islowerr(This method returns true if all the charectors in a strng are lowercase or not! )
-print(song.islower())
-#11)isupper(This method returns true if all the charectors in a strng are upper not not! )
-print(song.isupper())
-#12)string split method (IT COVERT STRING TO LIST)
-a="Akash"
-name1=a.split()
-print(name1)
-#14)strip()-IT REMOVE ALL SPACE IN STRING
-a = "Hello, World! "
-print(a.strip())
+s = "Hello World"
+
+# capitalize() – First letter uppercase
+print(s.capitalize())          # Hello world
+
+# casefold() – Strong lowercase
+print(s.casefold())            # hello world
+
+# lower() – Convert to lowercase
+print(s.lower())               # hello world
+
+# upper() – Convert to uppercase
+print(s.upper())               # HELLO WORLD
+
+# title() – Title case
+print(s.title())               # Hello World
+
+# swapcase() – Swap cases
+print(s.swapcase())            # hELLO wORLD
+
+
+# center() – Center align
+print(s.center(20))            # '    Hello World     '
+
+# ljust() – Left align
+print(s.ljust(20))             # 'Hello World         '
+
+# rjust() – Right align
+print(s.rjust(20))             # '         Hello World'
+
+# zfill() – Zero padding
+print("42".zfill(5))           # 00042
+
+
+# find() – Find index (-1 if not found)
+print(s.find("o"))             # 4
+
+# rfind() – Last index
+print(s.rfind("o"))            # 7
+
+# index() – Find index (error if not found)
+print(s.index("W"))            # 6
+
+# count() – Count substring
+print(s.count("l"))            # 3
+
+# startswith() – Check start
+print(s.startswith("H"))       # True
+
+# endswith() – Check end
+print(s.endswith("d"))         # True
+
+
+# strip() – Remove spaces
+print("  hi  ".strip())        # hi
+
+# lstrip() – Remove left spaces
+print("  hi".lstrip())         # hi
+
+# rstrip() – Remove right spaces
+print("hi  ".rstrip())         # hi
+
+# replace() – Replace substring
+print(s.replace("World", "Python"))  # Hello Python
+
+
+# split() – Split string
+print(s.split())               # ['Hello', 'World']
+
+# join() – Join strings
+print("-".join(["Hello", "World"]))  # Hello-World
+
+# partition() – Split into 3 parts
+print(s.partition(" "))        # ('Hello', ' ', 'World')
+
+
+# isalpha() – Only letters
+print("Hello".isalpha())       # True
+
+# isdigit() – Only digits
+print("123".isdigit())         # True
+
+# isalnum() – Letters and digits
+print("Hello123".isalnum())    # True
+
+# islower() – All lowercase
+print("hello".islower())       # True
+
+# isupper() – All uppercase
+print("HELLO".isupper())       # True
+
+# isspace() – Only spaces
+print("   ".isspace())         # True
+
+# isidentifier() – Valid variable name
+print("name_1".isidentifier()) # True
+
+
+# removeprefix() – Remove prefix
+print(s.removeprefix("Hello ")) # World
+
+# removesuffix() – Remove suffix
+print(s.removesuffix("World"))  # Hello 
+
+
+# encode() – Encode string
+print(s.encode())              # b'Hello World'
+
+# maketrans() & translate() – Character replace
+table = str.maketrans("HW", "hw")
+print(s.translate(table))      # hello world

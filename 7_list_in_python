@@ -15,33 +15,87 @@ print(name[:4])
 print("Akash" in name)
 #6 )NOT IN MEMBER
 print("Akash" not in name)
-#BUILT IN FUNCTIONS COMMON TO LISTS AND TUPLES
-#1 )len()
-print(len(name))
-#2 )max()
-print(max(name))
-#3 )min()
-print(min(name))
 
-#MANIPUTATING LIST & UTILIZE FUNCTIONS
-#1 )append()
-print(name.append("Abhinash"))
-print(name)
-#2 )insert() INDEX NUMBER IS REQUIRED FOR INSERTING DATA IN YOUR INDEX NUMBER
-print(name.insert(3,"Biswajeet"))
-print(name)
-#3 )remove()
-print(name.remove("Abhinash"))
-print(name)
-#4 )pop() REMOVE LAST ITEM IN LIst
-print(name.pop())
-print(name)   
-#5 )reverse()
-print(name.reverse())
-print(name)
-#6 )sort
-name.sort()
-print(name)
+
+#BUILT IN FUNCTIONS COMMON TO LISTS 
+lst = [1, 2, 3, 4, 5]
+
+# len() – Number of elements
+print(len(lst))                # 5
+
+# type() – Type of variable
+print(type(lst))               # <class 'list'>
+
+# max() – Maximum value
+print(max(lst))                # 5
+
+# min() – Minimum value
+print(min(lst))                # 1
+
+# sum() – Sum of elements
+print(sum(lst))                # 15
+
+# sorted() – Returns sorted list
+print(sorted(lst))             # [1, 2, 3, 4, 5]
+
+# list() – Convert to list
+print(list("abc"))             # ['a', 'b', 'c']
+
+# any() – True if any element is True
+print(any(lst))                # True
+
+# all() – True if all elements are True
+print(all(lst))                # True
+
+# enumerate() – Index with value
+print(list(enumerate(lst)))    # [(0,1), (1,2), (2,3), (3,4), (4,5)]
+
+#List Methods
+lst = [1, 2, 3, 4]
+
+# append() – Add element at end
+lst.append(5)
+print(lst)                     # [1, 2, 3, 4, 5]
+
+# extend() – Add multiple elements
+lst.extend([6, 7])
+print(lst)                     # [1, 2, 3, 4, 5, 6, 7]
+
+# insert() – Insert at position
+lst.insert(2, 99)
+print(lst)                     # [1, 2, 99, 3, 4, 5, 6, 7]
+
+# remove() – Remove first occurrence
+lst.remove(99)
+print(lst)                     # [1, 2, 3, 4, 5, 6, 7]
+
+# pop() – Remove by index (last by default)
+lst.pop()
+print(lst)                     # [1, 2, 3, 4, 5, 6]
+
+# index() – Get index of element
+print(lst.index(4))            # 3
+
+# count() – Count occurrences
+lst.append(2)
+print(lst.count(2))            # 2
+
+# sort() – Sort list
+lst.sort()
+print(lst)                     # [1, 2, 2, 3, 4, 5, 6]
+
+# reverse() – Reverse list
+lst.reverse()
+print(lst)                     # [6, 5, 4, 3, 2, 2, 1]
+
+# copy() – Copy list
+new_lst = lst.copy()
+print(new_lst)                 # [6, 5, 4, 3, 2, 2, 1]
+
+# clear() – Remove all elements
+lst.clear()
+print(lst) 
+
 
 #sort discending
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]

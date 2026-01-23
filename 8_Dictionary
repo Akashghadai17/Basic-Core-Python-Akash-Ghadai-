@@ -23,12 +23,15 @@ icc_wc["Srilanka"]=1
 print(icc_wc)
 
 #built-in functions
-#1)len()
-print(len(icc_wc))
-#2)max()
-print(max(icc_wc))
-#3)min()
-print(min(icc_wc))
+d = {"a": 1, "b": 2, "c": 3}
+
+len(d)
+type(d)
+str(d)
+dict()
+max(d)
+min(d)
+sorted(d)
 
 #Delete data item from distionary
 del icc_wc["Srilanka"]
@@ -41,10 +44,18 @@ icc_wc.clear()
 print(icc_wc)
 
 #METHOD OF DISTIONARY OBJECT
-#1)items()
-icc={"India":[3,0],"PAkistan":[1,2],"England":[2,1]}
-print(icc.items())
-#2)keys()
-print(icc.keys())
-#3)values()
-print(icc.values())
+d = {"a": 1, "b": 2, "c": 3}
+
+d.keys()
+d.values()
+d.items()
+d.get("a")
+d.get("x", 0)
+d.update({"d": 4})
+d.pop("b")
+d.popitem()
+d.setdefault("e", 5)
+d.copy()
+d.clear()
+
+dict.fromkeys(["x", "y", "z"], 0)

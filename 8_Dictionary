@@ -1,0 +1,50 @@
+#CREATING DICTIONARY
+icc_wc={"India":2,"Pakistan":1,"England":1}
+print(icc_wc)
+#ADD 2 DATATYPE
+icc={"India":[3,0],"PAkistan":[1,2],"England":[2,1]}
+print(icc)
+#key list(NOT ASSESS PYTHON)
+#items={["Elkos","Classmate","Reynolds"]:"pen",["Dell","Lenevo","Lg"]:"Fridge"}
+#print(items)
+item={("Elkos","Classmate","Reynolds"):"pen",("Dell","Lenevo","Lg"):"Fridge"}
+print(item)
+
+#Acess value from dictionary(get())
+icc_wc={"India":2,"Pakistan":1,"England":1}
+print(icc_wc.get("India"))
+
+#update value in distionary
+icc_wc["England"]=130
+print(icc_wc)
+
+#Add new data items in distionary
+icc_wc["Srilanka"]=1
+print(icc_wc)
+
+#built-in functions
+#1)len()
+print(len(icc_wc))
+#2)max()
+print(max(icc_wc))
+#3)min()
+print(min(icc_wc))
+
+#Delete data item from distionary
+del icc_wc["Srilanka"]
+print(icc_wc)
+#pop()
+icc_wc.pop("India")
+print(icc_wc)
+#clear()
+icc_wc.clear()
+print(icc_wc)
+
+#METHOD OF DISTIONARY OBJECT
+#1)items()
+icc={"India":[3,0],"PAkistan":[1,2],"England":[2,1]}
+print(icc.items())
+#2)keys()
+print(icc.keys())
+#3)values()
+print(icc.values())

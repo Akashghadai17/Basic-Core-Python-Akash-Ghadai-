@@ -1,0 +1,67 @@
+t = (10, 20, 30, 20, 40)
+
+# -------------------------------
+# TUPLE OPERATIONS
+# -------------------------------
+
+# Access element by index
+print(t[0])                    # 10
+
+# Slicing
+print(t[1:4])                  # (20, 30, 20)
+
+# Concatenation
+print(t + (50, 60))            # (10, 20, 30, 20, 40, 50, 60)
+
+# Repetition
+print(t * 2)                   # (10, 20, 30, 20, 40, 10, 20, 30, 20, 40)
+
+# Membership
+print(30 in t)                 # True
+
+# Iteration
+for i in t:
+    print(i)
+
+
+# -------------------------------
+# TUPLE BUILT-IN FUNCTIONS
+# -------------------------------
+
+# len() – Number of elements
+print(len(t))                  # 5
+
+# type() – Data type
+print(type(t))                 # <class 'tuple'>
+
+# max() – Maximum element
+print(max(t))                  # 40
+
+# min() – Minimum element
+print(min(t))                  # 10
+
+# sum() – Sum of elements
+print(sum(t))                  # 120
+
+# sorted() – Returns sorted list
+print(sorted(t))               # [10, 20, 20, 30, 40]
+
+# tuple() – Convert to tuple
+print(tuple([1, 2, 3]))        # (1, 2, 3)
+
+# any() – True if any element is True
+print(any(t))                  # True
+
+# all() – True if all elements are True
+print(all(t))                  # True
+
+
+# -------------------------------
+# TUPLE METHODS (Only 2)
+# -------------------------------
+
+# count() – Count occurrences
+print(t.count(20))             # 2
+
+# index() – Index of element
+print(t.index(30))             # 2

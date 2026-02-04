@@ -2,6 +2,7 @@
 # -------------------------------
 
 # if statement
+--------------
 # Executes block if condition is True
 age = 20
 if age >= 18:
@@ -9,6 +10,7 @@ if age >= 18:
 
 
 # if-else statement
+-------------------
 # Executes one block if condition is True, else another block
 age = 16
 if age >= 18:
@@ -18,6 +20,7 @@ else:
 
 
 # if-elif statement
+-------------------
 # Checks multiple conditions
 marks = 75
 if marks >= 90:
@@ -27,6 +30,7 @@ elif marks >= 60:
 
 
 # if-elif-else ladder
+---------------------
 # Executes only one block based on multiple conditions
 marks = 45
 if marks >= 90:
@@ -35,5 +39,21 @@ elif marks >= 75:
     print("Grade B")
 elif marks >= 50:
     print("Grade C")
+
+#in in if
+---------
+
+l1=[1,2,3,4,6]
+
+if 1 in l1:
+    print("1")
+else:
+    print("No")
+
+output
+------
+1
 else:
     print("Fail")
+
+

@@ -1,0 +1,27 @@
+Type Casting in Python
+----------------------
+-Type casting means converting one data type into another.
+
+Implicit Type Casting
+---------------------
+-Python converts the data type automatically.
+a = 10        # int
+b = 2.5       # float
+c = a + b
+print(c)      # 12.5
+
+Explicit Type Casting
+---------------------
+-Programmer converts the data type manually.
+-Common casting functions
+
+Function	        Converts to
+--------          -----------
+int()	            Integer
+float()	          Float
+str()	            String
+list()	          List
+tuple()	          Tuple
+set()	            Set
+
+

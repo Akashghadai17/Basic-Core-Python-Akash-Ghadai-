@@ -1,0 +1,118 @@
+Python Data Types
+│
+├── Numeric
+│   ├── int
+│   ├── float
+│   └── complex
+│
+├── Sequence
+│   ├── str
+│   ├── list
+│   ├── tuple
+│   └── range
+│
+├── Set
+│   ├── set
+│   └── frozenset
+│
+├── Mapping
+│   └── dict
+│
+├── Boolean
+│   └── bool
+│
+├── Binary
+│   ├── bytes
+│   ├── bytearray
+│   └── memoryview
+│
+└── None
+    └── NoneType
+
+Numeric Data Types
+------------------
+-Used to store numbers.
+Data Type             Example
+---------             -------
+int                   x = 10
+float                 y = 3.14
+complex               z = 2+3j
+
+Sequence Data Types
+-------------------
+-Used to store collections of items
+Data Type             Example
+---------             -------
+str (String)          name = "Akash"
+list                  a = [1, 2, 3]
+tuple                 b = (1, 2, 3)
+range                 r = range(5)
+
+Set Data Types
+--------------
+-Used to store unique elements.
+Data Type             Example
+---------             -------
+set                   s = {1, 2, 3}
+frozenset             fs = frozenset([1, 2, 3])  #output- frozenset({1, 2, 3})
+
+Mapping Data Type
+-----------------
+-Stores data in key : value pairs.
+Data Type             Example
+---------             -------
+dict                  d = {"id": 1, "name": "Ram"}
+
+Boolean Data Type
+------------------
+-Used for True/False conditions.
+Data Type             Example
+---------             -------
+bool                  x = True
+
+Binary Data Types
+-----------------
+-Used for binary data.
+Data Type             Example
+---------             -------
+bytes	                b = b"hello"
+bytearray	            ba = bytearray(5) #output- bytearray(b'\x00\x00\x00\x00\x00')
+memoryview	          mv = memoryview(b"hello") #output- <memory at 0x7ff1d6fe1d80>
+
+None Type
+---------
+-Represents no value.
+Data Type             Example
+---------             -------
+NoneType              x = None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

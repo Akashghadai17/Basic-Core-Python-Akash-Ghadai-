@@ -1,0 +1,203 @@
+1️)Integer (int)
+---------------
+-Used for counts, loops, indexes.
+
+    n = int(input("Enter number: "))
+    print(n)
+
+2)Float (float)
+---------------
+-Used for marks, price, percentage.
+
+    f = float(input("Enter float: "))
+    print(f)
+
+3)String (str)
+--------------
+-Used for text data.
+
+    name = input("Enter name: ")
+    print(name)
+
+4)List (list)
+--------------
+-Input list of integers (MOST ASKED)
+
+    lst = list(map(int, input().split()))
+    print(lst)
+
+-split() -> splits by space
+-map() -> converts each value
+-list() -> stores as list
+
+5)Tuple (tuple)
+---------------
+-Immutable (cannot change values)
+    t = tuple(map(int, input().split()))
+    print(t)
+
+6)Set (set)
+--------------
+    s = set(map(int, input().split()))
+    print(s)
+
+7)Dictionary (dict)
+-------------------
+Method 1: Key–Value input (interview favorite)
+    d = {}
+    n = int(input("Enter size: "))
+    
+    for i in range(n):
+        key, value = input().split()
+        d[key] = value
+    
+    print(d)
+
+printing
+-------
+only key
+--------
+Print keys only (default behavior)
+d = {"a": 10, "b": 20, "c": 30}
+
+for key in d:
+    print(key)
+output
+------
+a
+b
+c
+
+only values
+-----------
+for value in d.values():
+    print(value)
+Output:
+
+10
+20
+30
+
+key and value
+-------------
+for key, value in d.items():
+    print(key, value)
+output
+------
+a 10
+b 20
+c 30
+
+
+
+8)Boolean (bool)
+----------------
+b = bool(int(input()))   # 1 → True, 0 → False
+print(b)
+
+9)Multiple Inputs in One Line
+-----------------------------
+a, b, c = map(int, input().split())
+print(a, b, c)
+
+
+
+PLACEMENT MOST IMPORTANT PATTERNS
+----------------------------------
+Input array
+-----------
+arr = list(map(int, input().split()))
+
+Input matrix
+------------
+n, m = map(int, input().split())
+mat = [list(map(int, input().split())) for _ in range(n)]
+
+Input string without spaces
+---------------------------
+s = input().strip()
+
+* (unpacking) prints elements without brackets.
+-----------------------------------------------
+lst = [10, 20, 30, 40, 50, 60]
+print(*lst)
+
+output
+------
+10 20 30 40 50 60
+
+With comma separation
+---------------------
+lst = [10, 20, 30, 40, 50, 60]
+print(*lst, sep=", ")
+output
+------
+10, 20, 30, 40, 50, 60
+
+If input is a STRING (very common in exams)
+-------------------------------------------
+s = "[10, 20, 30, 40, 50, 60]"
+nums = s.strip("[]")
+print(nums)
+
+lst="Akash"
+print(" ".join(map(str, lst)))
+output
+------
+A k a s h
+
+lst="Akash"
+print(*lst)
+output
+------
+A k a s h
+
+OUTPUT in Python
+----------------
+Output Without New Line
+-----------------------
+print("Hello", end=" ")
+print("World")
+output
+------
+Hello World
+
+separator in Output
+-------------------
+print(1, 2, 3, sep="-")
+output
+------
+1-2-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
